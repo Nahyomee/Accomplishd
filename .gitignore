@@ -6,6 +6,7 @@
 /public/fcm.json
 /public/firebase-messaging-sw.js
 /public/firebase.js
+public/tinydash
 /storage/*.key
 /vendor
 .env

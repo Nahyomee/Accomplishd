@@ -33,7 +33,7 @@ class Kernel extends ConsoleKernel
                 ];
                 Notification::send($task->user, new TaskDueNotification($notification));
             }
-        })->everyMinute();
+        })->everyFifteenMinutes();
     }
 
     /**
