@@ -13,10 +13,10 @@ class Login extends Component
 
     #[Rule('required', message:'Email is required')]
     #[Rule('email', message:'Please input a valid email')]
-    public $email = '';
+    public $email = 'test@mail.com';
     
     #[Rule('required', message:'Password is required')]
-    public $password = '';
+    public $password = '12345678!';
 
 
     public function login()

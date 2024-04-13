@@ -24,6 +24,7 @@
   <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
@@ -56,7 +57,7 @@
           <li><a class="nav-link scrollto" href="#features">Features</a></li>
           <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
           <li><a wire:naviigate class="nav-link" href="{{route('login')}}">Login</a></li>
-          <li><a  class="nav-link" href="">Github</a></li>
+          <li><a  class="nav-link" target="_blank" href="https://github.com/Nahyomee/Accomplishd">Github</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,7 +73,7 @@
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out">
             <h1>Maximize your productivity with <span>Accomplishd</span></h1>
-            <h2>Schedule your Telegram, Whatsapp messages</h2>
+            <h2>Tick off your completed tasks</h2>
             <div class="text-center text-lg-start">
               <a href="{{route('login')}}" class="btn-get-started scrollto">Get Started</a>
             </div>
@@ -113,10 +114,10 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+            <h3>Accomplishd</h3>
+            <p>This is a side project, where I make a To-Do App. I'm experimenting with livewire and also want to try my hands on some features I haven't used before.</p>
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+           {{--  <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon"><i class='bx bxl-telegram'></i></div>
               <h4 class="title"><a href="">Telegram</a></h4>
               <p class="description">Schedule messages on Telegram groups or private messages</p>
@@ -126,7 +127,7 @@
               <div class="icon"><i class="bx bxl-whatsapp"></i></div>
               <h4 class="title"><a href="">Whatsapp</a></h4>
               <p class="description">Schedule messages on Whatsapp groups or private messages</p>
-            </div>
+            </div> --}}
 
 
           </div>
@@ -147,50 +148,51 @@
         <div class="row" data-aos="fade-left">
           <div class="col-lg-3 col-md-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-              <i class="ri-message-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Message Scheduling</a></h3>
+              <i class="fa fa-user-lock" style="color: #ffbb2c;"></i>
+              <h3><a href="#">User Authentication</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fa fa-list-check" style="color: #e361ff;"></i>
+              <h3><a href="">Task Management</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+              <i class="fa fa-bell" style="color: #e80368;"></i>
+              <h3><a href="">Notifications</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
               <i class="ri-calendar-schedule-line" style="color: #5578ff;"></i>
-              <h3><a href="">Recurring Scheduling</a></h3>
+              <h3><a href="">Recurring Tasks(ongoing)</a></h3>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-              <i class="ri-broadcast-line" style="color: #e80368;"></i>
-              <h3><a href="">Broadcast Scheduling(Telegram)</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Template Management</a></h3>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fa fa-shield-halved" style="color: #ffa76e;"></i>
+              <h3><a href="">Two-factor Authentication (ongoing)</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
               <i class="ri-calendar-todo-line" style="color: #47aeff;"></i>
-              <h3><a href="">Calendar Integration</a></h3>
+              <h3><a href="">Calendar Integration (pending)</a></h3>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <i class="ri-time-line" style="color: #ffa76e;"></i>
-              <h3><a href="">Reminder</a></h3>
-            </div>
-          </div>
+          
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">Midela Teren</a></h3>
+              <i class="fa fa-solid fa-database" style="color: #11dbcf;"></i>
+              <h3><a href="">Data Backup (pending)</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-              <i class="ri-price-tag-2-line" style="color: #29cc61;"></i>
-              <h3><a href="">Pira Neve</a></h3>
+              <i class="fa fa-solid fa-chart-line" style="color: #29cc61;"></i>
+              <h3><a href="">Analytics (pending)</a></h3>
             </div>
           </div>
         </div>
@@ -208,25 +210,19 @@
         </div>
 
         <div class="row" data-aos="fade-left">
-
-            @for ($i = 0; $i < 4; $i++)
                 
-            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0"">
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0"">
               <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                <div class="pic"><img src="{{asset('assets/img/team/team-1.jpg')}}" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="{{asset('assets/img/quizmaster.png')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4><a href="">Walter White</a></h4>
-                  <span>Chief Executive Officer</span>
+                  <h4><a href="https://github.com/Nahyomee/QuizMaster-API">QuizMaster Api</a></h4>
+                  <span>Quiz API using Laravel Santum</span>
                   <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href=""><i class="bi bi-github"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            @endfor
 
 
         </div>
