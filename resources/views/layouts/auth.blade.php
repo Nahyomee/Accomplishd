@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{asset('assets/img/logo-dark.png')}}">
-    <title>Message Butler - {{$title}}</title>
+    <title>Accomplishd - {{$title}}</title>
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="{{asset('backend/css/simplebar.css')}}">
     <!-- Fonts CSS -->
